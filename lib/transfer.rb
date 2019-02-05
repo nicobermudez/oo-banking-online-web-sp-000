@@ -1,6 +1,6 @@
 class Transfer
   # your code here
-  attr_accessor :balance, :status
+  attr_accessor :receiver, :sender, :amount, :status
   attr_reader :name
   attr_writer
 
