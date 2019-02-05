@@ -14,4 +14,15 @@ class Transfer
   def valid?
     self.sender.valid? && self.receiver.valid?
   end
+
+  def execute_transaction
+    if !sender.valid?
+      "Rejected"
+    else
+      
+    end
+  end
+  
+  def reverse_transfer
+  end
 end
