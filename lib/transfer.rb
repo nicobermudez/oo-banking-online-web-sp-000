@@ -19,7 +19,7 @@ class Transfer
     if !sender.valid?
       "Rejected"
     else
-      
+
     end
   end
   
