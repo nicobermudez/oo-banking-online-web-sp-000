@@ -21,10 +21,13 @@ class Transfer
     else
       self.sender.balance -= amount
       self.receiver.balance += amount
+      self.amount = 0
       self.status = "complete"
     end
   end
 
   def reverse_transfer
+    self.receiver.balance -= amount
+    self.sender.balance += amount
   end
 end
