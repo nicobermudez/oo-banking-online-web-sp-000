@@ -19,7 +19,8 @@ class Transfer
     if !sender.valid?
       "Rejected"
     else
-
+      self.sender -= amount
+      self.receiver += amount
     end
   end
   
