@@ -21,7 +21,7 @@ class Transfer
     else
       self.sender -= amount
       self.receiver += amount
-      amount = 0
+      self.amount = 0
     end
   end
 
