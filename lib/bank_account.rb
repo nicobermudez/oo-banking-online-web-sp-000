@@ -10,10 +10,11 @@ class BankAccount
   end
 
   def deposit(amount)
+    self.balance += amount
   end
 
   def display_balance
-    "Yout balance is $#{self.balance}."
+    "Your balance is $#{self.balance}."
   end
 
 end
